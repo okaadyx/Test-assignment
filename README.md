@@ -27,7 +27,7 @@ The app fetches product data from the [DummyJSON API](https://dummyjson.com) to 
 
 ## How to Run the Project
 
-**APK build:** [Download here](https://drive.google.com/file/d/1Ye5HDFdSKE1-v81v5xsaQD9lh6WCqmeu/view?usp=sharing)
+**APK build:** [Download here](https://drive.google.com/file/d/1hyt5aVTmR6ShYbq22XrSiaKVCMCkbohD/view?usp=drive_link)
 
 ### Prerequisites
 
@@ -54,8 +54,9 @@ Before running the project, ensure you have the following installed:
 
 ### Installation Steps
 
-1. **Clone or navigate to the project directory:**
+1. **Clone the repository and navigate to the project directory:**
 ```sh
+git clone https://github.com/okaadyx/test-assignment
 cd test-assignment
 ```
 
