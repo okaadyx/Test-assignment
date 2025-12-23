@@ -56,7 +56,7 @@ Before running the project, ensure you have the following installed:
 
 1. **Clone or navigate to the project directory:**
 ```sh
-cd testing
+cd test-assignment
 ```
 
 2. **Install dependencies:**
