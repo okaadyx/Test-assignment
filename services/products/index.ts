@@ -15,6 +15,12 @@ export class ProductsApi {
     const { data } = await this.client.get<ProductsListResponse>('/products');
     return data.products;
   }
+  async fetchProductsPaginated(params?: { limit?: number; skip?: number }) {
+    const { data } = await this.client.get<ProductsListResponse>('/products', {
+      params,
+    });
+    return data;
+  }
   async fetchCategories() {
     const { data } = await this.client.get('/products/categories');
     return data;
@@ -25,11 +31,15 @@ export class ProductsApi {
     );
     return data.products;
   }
-  async fetchByCategory(slug: string) {
+  async fetchByCategory(
+    slug: string,
+    params?: { limit?: number; skip?: number },
+  ) {
     const { data } = await this.client.get<CategoryProductsResponse>(
       `/products/category/${slug}`,
+      { params },
     );
-    return data.products;
+    return data;
   }
   async fetchProductById(id: number) {
     const { data } = await this.client.get<Product>(`/products/${id}`);
